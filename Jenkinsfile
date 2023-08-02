@@ -28,7 +28,7 @@ pipeline {
             }
           }
         }
-        stage('buil on k8s'){
+        stage('buil on k8s last stage'){
           steps {
             withKubeConfig([credentialsId: 'kubeconfig']){
               sh 'pwd'
